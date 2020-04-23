@@ -5,7 +5,7 @@ class PigPen extends React.Component {
 
   render() {
 
-    const piggies = this.props.hogs.map( (pig) => <Pig pig={pig} key={pig.name}/> )
+    const piggies = this.props.hogs.map( (pig) => <Pig pig={pig} key={pig.name} showMe={this.props.showMe}/> )
 
     return (
       <div>
